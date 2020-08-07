@@ -132,8 +132,8 @@ if(!empty($pardotListID)) // if we want to inspect a list, lets do so
 		array(
 			'user_key' => trim(getenv('pardotUserKey')), //available from https://pi.pardot.com/account
 			'api_key' => $APIKey, // requested from the server previously
-			'last_activity_after' => '21 minutes ago',
-			//'last_activity_after' => '1 days ago',
+			//'last_activity_after' => '21 minutes ago',
+			'last_activity_after' => '1 days ago',
 			'fields' => 'email,country,state,crm_owner_fid', // Optional list for speeding up the process by getting just the data we need.
 			'limit'	  => $recordsToRequest,
 			'offset' => $loopcounter * $recordsToRequest
